@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mmec-erd-landing",
+  "name": "erd-mmec-ca",
   "compatibility_date": "2026-04-16",
   "observability": {
     "enabled": true
