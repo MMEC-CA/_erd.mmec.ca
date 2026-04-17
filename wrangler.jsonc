@@ -2,13 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "erd-mmec-ca",
   "compatibility_date": "2026-04-16",
-  "observability": {
-    "enabled": true
-  },
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": "."
   },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "observability": {
+    "enabled": true
+  }
 }
