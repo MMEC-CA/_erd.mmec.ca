@@ -19,24 +19,39 @@
   a { text-decoration: none; color: #0366d6; }
   a:hover { text-decoration: underline; }
   .desc { color: #666; margin-left: 0.5em; }
+  .cols3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem 2rem;
+    margin-top: 0.5rem;
+  }
+  .cols3 ul.plain { margin: 0; }
 </style>
 </head>
 <body>
 <h1>Erdkinder index of programming projects</h1>
 
 <h2>Non-Erdkinder projects</h2>
-<ul class="plain">
-  <li><a href="/gm1/">gm1</a><span class="desc">— Joustine (multiplayer WebRTC)</span></li>
-  <li><a href="/gm2/">gm2</a><span class="desc">— Confirm Multiplayer Basics</span></li>
-  <li><a href="/gm3/">gm3</a><span class="desc">— Raceway (multiplayer)</span></li>
-  <li><a href="/gm4/">gm4</a><span class="desc">— Grand Prix (multiplayer racing)</span></li>
-  <li><a href="/am2/">am2</a><span class="desc">— Marble Sadness</span></li>
-  <li><a href="/am3/">am3</a></li>
-  <li><a href="/bk1/">bk1</a></li>
-  <li><a href="/bk2/">bk2</a><span class="desc">— Car Car</span></li>
-  <li><a href="/bk3/">bk3</a></li>
-  <li><a href="/bk4/">bk4</a></li>
-</ul>
+<div class="cols3">
+  <ul class="plain">
+    <li><a href="/am1/">am1</a></li>
+    <li><a href="/am2/">am2</a><span class="desc">— Marble Sadness</span></li>
+    <li><a href="/am3/">am3</a></li>
+    <li><a href="/am4/">am4</a></li>
+  </ul>
+  <ul class="plain">
+    <li><a href="/bk1/">bk1</a></li>
+    <li><a href="/bk2/">bk2</a><span class="desc">— Car Car</span></li>
+    <li><a href="/bk3/">bk3</a></li>
+    <li><a href="/bk4/">bk4</a></li>
+  </ul>
+  <ul class="plain">
+    <li><a href="/gm1/">gm1</a><span class="desc">— Joustine (multiplayer WebRTC)</span></li>
+    <li><a href="/gm2/">gm2</a><span class="desc">— Confirm Multiplayer Basics</span></li>
+    <li><a href="/gm3/">gm3</a><span class="desc">— Raceway (multiplayer)</span></li>
+    <li><a href="/gm4/">gm4</a><span class="desc">— Grand Prix (multiplayer racing)</span></li>
+  </ul>
+</div>
 
 <h2>Erdkinder projects</h2>
 <div class="grid">
