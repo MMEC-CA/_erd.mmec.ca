@@ -7,15 +7,8 @@
   body { font-family: system-ui, -apple-system, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
   h1 { margin-bottom: 1.5rem; }
   h2 { margin-top: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 0.3rem; font-weight: 500; }
-  ul.plain { list-style: none; padding: 0; }
+  ul.plain { list-style: none; padding: 0; margin: 0; }
   ul.plain li { padding: 0.25rem 0; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-    gap: 0.4rem 1rem;
-    margin-top: 0.5rem;
-  }
-  .grid a { padding: 0.25rem 0; font-family: monospace; }
   a { text-decoration: none; color: #0366d6; }
   a:hover { text-decoration: underline; }
   .desc { color: #666; margin-left: 0.5em; }
@@ -25,7 +18,12 @@
     gap: 1rem 2rem;
     margin-top: 0.5rem;
   }
-  .cols3 ul.plain { margin: 0; }
+  .multi-col {
+    columns: 3 220px;
+    column-gap: 2rem;
+    margin-top: 0.5rem;
+  }
+  .multi-col li { break-inside: avoid; padding: 0.2rem 0; }
 </style>
 </head>
 <body>
@@ -35,7 +33,7 @@
 <div class="cols3">
   <ul class="plain">
     <li><a href="/am1/">am1</a></li>
-    <li><a href="/am2/">am2</a><span class="desc">— Marble Sadness</span></li>
+    <li><a href="/am2/">am2</a><span class="desc">— Marble Sadness Revised</span></li>
     <li><a href="/am3/">am3</a></li>
     <li><a href="/am4/">am4</a></li>
   </ul>
@@ -46,80 +44,80 @@
     <li><a href="/bk4/">bk4</a></li>
   </ul>
   <ul class="plain">
-    <li><a href="/gm1/">gm1</a><span class="desc">— Joustine (multiplayer WebRTC)</span></li>
+    <li><a href="/gm1/">gm1</a><span class="desc">— Joustine — Multiplayer</span></li>
     <li><a href="/gm2/">gm2</a><span class="desc">— Confirm Multiplayer Basics</span></li>
-    <li><a href="/gm3/">gm3</a><span class="desc">— Raceway (multiplayer)</span></li>
-    <li><a href="/gm4/">gm4</a><span class="desc">— Grand Prix (multiplayer racing)</span></li>
+    <li><a href="/gm3/">gm3</a><span class="desc">— Raceway — Multiplayer</span></li>
+    <li><a href="/gm4/">gm4</a><span class="desc">— Grand Prix — Multiplayer Racing</span></li>
   </ul>
 </div>
 
 <h2>Erdkinder projects</h2>
-<div class="grid">
-  <a href="/ae2/">ae2</a>
-  <a href="/bs2/">bs2</a>
-  <a href="/ge2/">ge2</a>
-  <a href="/hm2/">hm2</a>
-  <a href="/id2/">id2</a>
-  <a href="/jb2/">jb2</a>
-  <a href="/jc2/">jc2</a>
-  <a href="/je2/">je2</a>
-  <a href="/jk2/">jk2</a>
-  <a href="/jv2/">jv2</a>
-  <a href="/jw2/">jw2</a>
-  <a href="/mf2/">mf2</a>
-  <a href="/mm2/">mm2</a>
-  <a href="/nh2/">nh2</a>
-  <a href="/nr2/">nr2</a>
-  <a href="/ns2/">ns2</a>
-  <a href="/sl2/">sl2</a>
-  <a href="/ss2/">ss2</a>
-  <a href="/xt2/">xt2</a>
-</div>
+<ul class="plain multi-col">
+  <li><a href="/ae2/">ae2</a></li>
+  <li><a href="/bs2/">bs2</a></li>
+  <li><a href="/ge2/">ge2</a><span class="desc">— Platformer</span></li>
+  <li><a href="/hm2/">hm2</a></li>
+  <li><a href="/id2/">id2</a></li>
+  <li><a href="/jb2/">jb2</a></li>
+  <li><a href="/jc2/">jc2</a><span class="desc">— Snake</span></li>
+  <li><a href="/je2/">je2</a><span class="desc">— Exploding buttons</span></li>
+  <li><a href="/jk2/">jk2</a></li>
+  <li><a href="/jv2/">jv2</a></li>
+  <li><a href="/jw2/">jw2</a></li>
+  <li><a href="/mf2/">mf2</a></li>
+  <li><a href="/mm2/">mm2</a></li>
+  <li><a href="/nh2/">nh2</a></li>
+  <li><a href="/nr2/">nr2</a><span class="desc">— Fly-Rex Celebration Dash</span></li>
+  <li><a href="/ns2/">ns2</a></li>
+  <li><a href="/sl2/">sl2</a></li>
+  <li><a href="/ss2/">ss2</a><span class="desc">— Fly-Rex Celebration Dash</span></li>
+  <li><a href="/xt2/">xt2</a></li>
+</ul>
 
 <h2>Erdkinder projects</h2>
-<div class="grid">
-  <a href="/ae3/">ae3</a>
-  <a href="/bs3/">bs3</a>
-  <a href="/ge3/">ge3</a>
-  <a href="/hm3/">hm3</a>
-  <a href="/id3/">id3</a>
-  <a href="/jb3/">jb3</a>
-  <a href="/jc3/">jc3</a>
-  <a href="/je3/">je3</a>
-  <a href="/jk3/">jk3</a>
-  <a href="/jv3/">jv3</a>
-  <a href="/jw3/">jw3</a>
-  <a href="/mf3/">mf3</a>
-  <a href="/mm3/">mm3</a>
-  <a href="/nh3/">nh3</a>
-  <a href="/nr3/">nr3</a>
-  <a href="/ns3/">ns3</a>
-  <a href="/sl3/">sl3</a>
-  <a href="/ss3/">ss3</a>
-  <a href="/xt3/">xt3</a>
-</div>
+<ul class="plain multi-col">
+  <li><a href="/ae3/">ae3</a></li>
+  <li><a href="/bs3/">bs3</a></li>
+  <li><a href="/ge3/">ge3</a></li>
+  <li><a href="/hm3/">hm3</a></li>
+  <li><a href="/id3/">id3</a></li>
+  <li><a href="/jb3/">jb3</a></li>
+  <li><a href="/jc3/">jc3</a></li>
+  <li><a href="/je3/">je3</a></li>
+  <li><a href="/jk3/">jk3</a></li>
+  <li><a href="/jv3/">jv3</a></li>
+  <li><a href="/jw3/">jw3</a></li>
+  <li><a href="/mf3/">mf3</a></li>
+  <li><a href="/mm3/">mm3</a></li>
+  <li><a href="/nh3/">nh3</a></li>
+  <li><a href="/nr3/">nr3</a></li>
+  <li><a href="/ns3/">ns3</a></li>
+  <li><a href="/sl3/">sl3</a></li>
+  <li><a href="/ss3/">ss3</a></li>
+  <li><a href="/xt3/">xt3</a></li>
+</ul>
 
 <h2>Erdkinder projects</h2>
-<div class="grid">
-  <a href="/ae4/">ae4</a>
-  <a href="/bs4/">bs4</a>
-  <a href="/ge4/">ge4</a>
-  <a href="/hm4/">hm4</a>
-  <a href="/id4/">id4</a>
-  <a href="/jb4/">jb4</a>
-  <a href="/jc4/">jc4</a>
-  <a href="/je4/">je4</a>
-  <a href="/jk4/">jk4</a>
-  <a href="/jv4/">jv4</a>
-  <a href="/jw4/">jw4</a>
-  <a href="/mf4/">mf4</a>
-  <a href="/mm4/">mm4</a>
-  <a href="/nh4/">nh4</a>
-  <a href="/nr4/">nr4</a>
-  <a href="/ns4/">ns4</a>
-  <a href="/sl4/">sl4</a>
-  <a href="/ss4/">ss4</a>
-  <a href="/xt4/">xt4</a>
-</div>
+<ul class="plain multi-col">
+  <li><a href="/ae4/">ae4</a></li>
+  <li><a href="/bs4/">bs4</a></li>
+  <li><a href="/ge4/">ge4</a></li>
+  <li><a href="/hm4/">hm4</a></li>
+  <li><a href="/id4/">id4</a></li>
+  <li><a href="/jb4/">jb4</a></li>
+  <li><a href="/jc4/">jc4</a></li>
+  <li><a href="/je4/">je4</a></li>
+  <li><a href="/jk4/">jk4</a></li>
+  <li><a href="/jv4/">jv4</a></li>
+  <li><a href="/jw4/">jw4</a></li>
+  <li><a href="/mf4/">mf4</a></li>
+  <li><a href="/mm4/">mm4</a></li>
+  <li><a href="/nh4/">nh4</a></li>
+  <li><a href="/nr4/">nr4</a></li>
+  <li><a href="/ns4/">ns4</a></li>
+  <li><a href="/sl4/">sl4</a></li>
+  <li><a href="/ss4/">ss4</a></li>
+  <li><a href="/xt4/">xt4</a></li>
+</ul>
 </body>
 </html>
